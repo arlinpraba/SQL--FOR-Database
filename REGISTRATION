@@ -1,0 +1,8 @@
+CREATE DATABASE Registration;
+USE Registration;
+CREATE TABLE Page(
+  User_Name VARCHAR(255),
+  Password VARCHAR(255),
+  Con-Password VARCHAR(255),
+  Email VARCHAR(255)
+);
