@@ -6,3 +6,6 @@ CREATE TABLE Page(
   Con-Password VARCHAR(255),
   Email VARCHAR(255)
 );
+ALTER TABLE Page
+ADD PRIMARY KEY (User_Name);
+DESCRIBE Page;
