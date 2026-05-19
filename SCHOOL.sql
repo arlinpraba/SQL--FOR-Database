@@ -60,5 +60,10 @@ UPDATE Student
      WHERE Stu_ID = 14330;
 SELECT * FROM Student;
  
- 
- 
+ INSERT INTO Student(Stu_ID,Name,Age,Email)
+    VALUES(14331,'Florina',20,'florina@gmail.com'),
+    (14332,'Eliana',20,'elianaeggloo@gmail.com'),
+    (14333,'Quincy',21,'quincyqueen021@gmail.com')
+    ;
+
+SELECT * FROM Student;
