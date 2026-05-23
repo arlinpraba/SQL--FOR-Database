@@ -37,3 +37,9 @@ USE Hospital;
 SELECT Name,Disease FROM Ward WHERE Name LIKE '%an%';
 SELECT Name,Disease FROM Ward WHERE Name LIKE 'a_%';
 SELECT Name,Disease,Payment,Location FROM Ward WHERE Name LIKE '%V%';
+
+SELECT Name,Disease,Payment,Location,Patient_ID,Age FROM Ward WHERE Disease LIKE '%Stress%';
+SELECT Name,Disease,Payment,Location,Patient_ID,Age FROM Ward WHERE Disease LIKE '%Fever%';
+SELECT Name,Disease,Payment,Location,Patient_ID,Age FROM Ward WHERE Location LIKE '%Tirupur%';
+SELECT Name,Disease,Payment,Location,Patient_ID,Age,Gender,Date_Admi FROM Ward WHERE Location LIKE '%Tirupur%';
+SELECT Name,Disease,Payment,Location,Patient_ID,Age,Gender,Date_Admi FROM Ward WHERE Gender LIKE '%Fe%';
