@@ -21,10 +21,6 @@ VALUES
 (104,'Vengence','Male',12,'Ttotil street, kulosa Nagar,Tirupur','Coughs','2024-06-05','Payed'),
 (105,'Cygnus','Female',22,'Ttotil street, kulosa Nagar,Tirupur','Fever','2024-06-07','Payed');
 
-SELECT * FROM Ward ORDER BY Patient_ID desc;
-SELECT * FROM Ward ORDER BY Patient_ID;
-SELECT * FROM Ward ORDER BY Name;
-
 SELECT * FROM Ward WHERE Age>=50;
 
 UPDATE Ward SET Payment='pending' WHERE Patient_ID='101';
@@ -35,3 +31,9 @@ Select * from Ward;
 
 DELETE FROM Ward Where Patient_ID='101';
 Select * from Ward;
+Select * from Ward COUNT(*)Totalvalue WHERE Disease='Stress';
+
+USE Hospital;
+SELECT Name,Disease FROM Ward WHERE Name LIKE '%an%';
+SELECT Name,Disease FROM Ward WHERE Name LIKE 'a_%';
+SELECT Name,Disease,Payment,Location FROM Ward WHERE Name LIKE '%V%';
