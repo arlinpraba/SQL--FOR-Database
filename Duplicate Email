@@ -1,0 +1,8 @@
+//Duplicate Email Leet Code
+CREATE TABLE Person(
+    id int PRIMARY KEY,
+    email VARCHAR(100)
+)
+
+SELECT email FROM Person
+GROUP BY email HAVING COUNT(email)>1;
